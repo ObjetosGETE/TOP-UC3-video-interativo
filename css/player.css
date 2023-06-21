@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
+
+@keyframes vanishMe{
+    0%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        z-index: -1;
+        opacity: 0;
+    }
+
+}
+
+
+
+.sumir{
+    animation: vanishMe ease-in 500ms forwards;
+}
+
+
+#CustomPlayer{
+    pointer-events: none;
+    width: 100%;
+    height: 100%;    
+}
+
+
+#fundoBTS{
+    background-color: rgba(0,0,0,0);
+   
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    height: 65px;
+    position: absolute;
+    bottom: 0;
+    transition: 300ms ease-in;
+    opacity: 0;
+
+    
+background: rgba(0,0,0,0);
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#ef349e', GradientType=0 );
+
+}
+#fundoBTS:hover{
+    transition: 300ms ease-in;
+    background-blend-mode: multiply;
+    opacity: 1;
+}
+#containerVideo{
+    /*border: 5px solid black;  */
+    /*width: 640px;
+    height: 360px; */
+    /*
+	width: 90vw;	
+    height: calc(90vw * (9/16));
+    */
+    width: 55vw;	
+    height: calc(55vw * (9/16));
+    max-width: 60em;
+	max-height: calc(60em * (9/16));
+    position:relative;
+    overflow: hidden;
+    margin:20px auto;
+    display: block;
+    box-shadow: 8px 8px 0 rgba(62,8,100,0.1);
+    border:2px solid lightgray;
+    
+}
+
+/*
+Nome do vídeo: roboto Light 25pt uppercase #313131
+Noe do curso: roboto Light 25pt #313131
+*/
+#informacoes{
+    float: left;
+    width: 65%;
+}
+#informacoes p{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#informacoes #nomeVideo{   
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #313131
+}
+#informacoes #nomeCurso{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;   
+    color: #313131
+}
+
+#videoInfo #logos{
+    float: right;
+    width: 30%;
+
+} 
+
+#videoInfo{
+    margin: 20px auto;
+    width: 100%;
+}
+
+#logo_player{
+    position: absolute;
+    right: 40px;
+    top: 4%;
+    max-width: 80px
+}
+.window{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column
+}
+
+.window.decisoes{
+    align-items:flex-end;
+    flex-flow: row;
+    
+}
+.respostaBtn{
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    width: 45%; 
+    height: 21%;   
+    
+    margin-bottom: 3.6%;
+    box-shadow: none;
+    color: transparent;
+    border: 1px solid magenta;
+    z-index: 999;
+}
+#startWindow{
+    background-color: black;
+    background-image: url(../assets/thumb_video.png);    
+    background-position: center center;
+    background-size: contain;
+}
+
+
+#btStart{
+    border:none;
+    padding: 20px;
+    /*background-color: white;
+    color: #2d2d2d;*/
+    color: transparent;
+    font-weight: bold;
+   /* box-shadow: 4px 4px 0 rgba(0,0,0,0.5);*/
+    width:175px;
+    height: 175px;
+    background-color: transparent; 
+    transition: 150ms;
+}
+
+#btStart:hover{
+    transform: scale(1.2);
+    transition: 150ms;
+
+}
+
+
+
+#decisao01{
+    visibility: hidden;
+}
+
+#btFull,#btWindowed{
+    /*border:none;*/
+    /*padding: 20px;*/
+    position: absolute;
+    
+    right:50px;
+    width:37px;
+    border: 0;
+    background-color: transparent;
+    height: 37px;
+    transition: 150ms;    
+    /*min-width: 30px !important;    
+    border-radius: 50%;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.5);
+    */
+}
+#btWindowed{
+    visibility: hidden;   
+}
+
+
+/*
+#btFull:hover::before{
+    content: "Tela cheia";
+    display:block;
+    position:absolute;
+    left: -75px;
+    text-align: right;
+    color: orange;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+
+#btWindowed:hover::before{
+    content: "Sair da tela cheia";
+    display:block;
+    position:absolute;
+    left: -125px;
+    text-align: right;
+    color: orange;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+*/
+#btPause, #btPlay{
+	position:absolute;    
+    left:35px;
+    width:37px;
+    height: 37px;
+    visibility:hidden;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+}
+
+
+#btPlay:hover svg, #btPause:hover svg{
+    transform: scale(1.15);
+    transition:150ms;
+    opacity: 1;
+}
+
+
+
+/*estilos dos botoes em svg*/
+
+#containerVideo h2.titulo-player{
+    color: white;
+    
+    /* somente webkit*/
+    /*
+    background: -webkit-linear-gradient(left, #FF1C89, #BD7FE0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+*/
+   text-shadow: 3px 3px 2px rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    padding-left: 3%;
+    top: 4%;
+    /* opacity: 0.8; */
+    font-size: 3em;
+    visibility: hidden;
+    font-family: 'Pacifico', sans-serif;
+}
+/*
+#btStart svg{
+    fill: #A7094;
+    opacity: 0.8;
+    transition:150ms;
+}
+
+#btFull svg, #btWindowed svg{
+    stroke: #A7094;
+    opacity: 0.8;
+    width: 37px;
+    height: 37px;
+    transition: 150ms;
+}
+
+#btPlay svg, #btPause svg{
+    width:37px;
+    height: 37px;
+    fill: #A7094;
+    opacity: 0.8;
+}
+
+#btFull:hover svg{
+    transition: 150ms;
+    transform: scale(1.15);
+}
+#btWindowed:hover svg{
+    transition: 150ms;
+    transform: scale(.85);
+}
+
+#btStart:hover svg{
+    opacity: 1;
+    transition:150ms;
+}
+*/
+/*
+button{
+    border: 1px solid magenta !important;
+}
+*/
+@media screen and (orientation:portrait){
+    #containerVideo{
+        width: 90vw;	
+        height: calc(90vw * (9/16));
+    }
+}
+
+@media screen and (max-width:700px){    
+    #fundoBTS{
+        opacity:1;
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: none;
+    }
+    
+    #btPause, #btPlay{
+        left:0;
+    }
+    #btFull, #btWindowed{
+        right: 10px;
+        bottom: 10px
+    }
+    html,body{
+        background-size: cover;
+    }
+    #main h1{
+        font-size:60px;
+    }
+    #main h2{
+        font-size:20px;
+        line-height: 1.4
+    }
+
+    #videoInfo #logos, #informacoes{
+        float: none;
+        margin-bottom: 30px;
+        width: 100%;       
+       
+    }
+    #videoInfo #logos{       
+        max-width: 250px;
+        margin: 50px auto;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:1024px){
+    #containerVideo{
+        width: 68vw;	
+        height: calc(68vw * (9/16));
+    }
+}
+
+@media screen and (min-height:800px){
+    body{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width:1600px) and (min-height:800px){
+
+    #containerVideo{
+        width: 90vw;	
+        height: calc(90vw * (9/16));
+    }
+}
