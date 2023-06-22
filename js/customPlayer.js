@@ -262,7 +262,7 @@ var decisoes ={
             
             let b = document.createElement('button');
             b.id = "btn_"+ev.id+"_"+i;
-            b.title = "botao de decisão "+(i+1);
+            // b.title = "botao de decisão "+(i+1);
             if(ev.labels[i]!= undefined){
                 b.innerHTML = ev.labels[i];
             }else {

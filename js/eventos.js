@@ -10,92 +10,210 @@ var audios = [
 var eventos = [
     {
         id:"inicial",
-        ts:118,
+        ts:8,
         type:'simple-scene',
-        nextScene: "escolha1"
+        nextScene: "take1"
     },
     {
-        id:"escolha1",
-        acessibilidade:"Sem a resposta de Ana e vendo a situação, Paula precisa fazer uma escolha. Selecione a opção que você acredita ser a atitude mais adequada a ser tomada por Paula.",
-        ts:118.5,
-        tf:137.1,
+        id:"take1",
+        acessibilidade:"Você está chegando na sala de recebimento de pedidos. É onde tudo começa.",
+        ts:8.5,
+        tf:15,
         type:'interaction',
-        decisoes:["cena-a1","cena-a2", null],
-        action: [null, null, `$("#modalId").modal("show")`],
-        labels:["Se oferecer para atender"," Não se envolver", "Abrir modal"],
-        audio_id: "audio_escolha1"
+        decisoes:["entradaPedidos"],
+        action: [null],
+        labels:["Clique para abrir a porta"],
+       
     },
     {
-        id:"cena-a1",
-        ts:137.4,
+        id:"entradaPedidos",
+        ts:15,
         type:'simple-scene',
-        nextScene: "cena-b1c1"
+        nextScene: "take3"
     },
     {
-        id:"cena-a2",
-        ts:289.3,
-        type:'simple-scene',
-        nextScene: "escolha3"
-    },
-    {
-        id:"cena-b1c1",
-        ts:162.5,
-        type:'simple-scene',
-        nextScene: "escolha2"
-    },
-    {
-        id:"escolha2",
-        acessibilidade:"Com o enfrentamento da colega, Paula precisa fazer uma escolha. Selecione a opção que você acredita ser a atitude mais adequada a ser tomada por Paula.",
-        ts:217.29,
-        tf:230,
+        id:"take3",
+        acessibilidade:"Aqui é feito o recebimento de pedidos. Sala com dois computadores e dezenas de caixas com os pedidos das empresas clientes. Um operador trabalhando em um dos computadores.",
+        ts:23,
+        tf:59,
         type:'interaction',
-        decisoes:["d1-1","d1-2"],
-        labels:["Justificar o atendimento","Reagir"],
-        audio_id: "audio_escolha2"
+        decisoes:[null,"take4"],
+        action: [`abrirModal("recebimentoPedidos")`, null],
+        labels:["abrir modal: Recebimento de pedidos","ir para: Mapa laboratório"],
     },
     {
-        id:"d1-1",
-        ts:230,
-        tf:260,
+        id:"take4",
+        ts:59,
+        tf:71,
         type:'jump',
-        jumpTo:"final"
+        jumpTo: "take5"
     },
     {
-        id:"d1-2",
-        ts:260.5,
-        tf:289.1,
-        type:'jump',
-        jumpTo:"final"
+        id:"take5",
+        ts:73.45,
+        type:'simple-scene',
+        nextScene: "mapa"
     },
     {
-        id:"escolha3",
-        acessibilidade:"Com o pedido do recepcionista, Paula precisa fazer uma escolha. Selecione a opção que você acredita ser a atitude mais adequada a ser tomada por Paula.",
-        ts:313,
-        tf:330.7,  //329.9
+        id:"mapa",
+        acessibilidade:"Aqui é o mapa. Daqui você pode ir para qualquer lugar da fábrica!",
+        ts:75,
+        tf:104,
         type:'interaction',
-        decisoes:["cena-c2","cena-b1c1"],
-        labels:[" Não atender a cliente","Atender a cliente"],
-        audio_id: "audio_escolha3"
+        decisoes:["entradaPedidos","corredor3", "corredor2", "corredor1"],
+        action: [null, null, null, null],
+        labels:["Ir para: Entrada de pedidos.", "Ir para: Corredor 1", "ir para: Corredor 2", "Ir para: Corredor 3"],
     },
     {
-        id:"cena-c2",
-        ts:330,
+        id:"corredor1",
+        ts:115.45,
         type:'simple-scene',
-        nextScene:null
+        nextScene: "corredor1-steps1"
     },
     {
-        id:"final",
-        ts:426.9,
-        type:'simple-scene',
-        nextScene:null
+        id:"corredor1-steps1",
+        acessibilidade:"Corredor 1. Aqui você está caminhando para perto do Tracer.",
+        ts:117.75,
+        tf:125,
+        type:'interaction',
+        decisoes:[`corredor1-trans1`, "mapa"],
+        action: [null, null],
+        labels:["Clique para chegar mais próximo da máquina.", "Ir para: Mapa"],
+  
     },
+
+    {
+        id:"corredor1-trans1",
+        ts:126,
+        type:'simple-scene',
+        nextScene: "corredor1-steps2"
+    },
+    {
+        id:"corredor1-steps2",
+        acessibilidade:"Corredor 1. Aqui você está caminhando para perto do Tracer.",
+        ts:133,
+        tf:153,
+        type:'interaction',
+        decisoes:[null, "mapa"],
+        action: [`abrirModal("tracer")`, null],
+        labels:["Clique para chegar mais próximo da máquina."],
+
+    },
+    {
+        id:"corredor2",
+        ts:154.45,
+        type:'simple-scene',
+        nextScene: "corredor2-steps1"
+    },
+    {
+        id:"corredor2-steps1",
+        acessibilidade:"Corredor 1. Aqui você está caminhando para perto do Tracer.",
+        ts:155.20,
+        tf:173,
+        type:'interaction',
+        decisoes:[null, "corredor2-trans1", "mapa"],
+        action: [`abrirModal("blocagem")`, null, null],
+        labels:["Abrir moda: Blocagem.", "Explorar mais", "Ir para: mapa"],
+
+    },
+    {
+        id:"corredor2-trans1",
+        ts:173.45,
+        type:'simple-scene',
+        nextScene: "corredor2-steps2"
+    },
+    {
+        id:"corredor2-steps2",
+        acessibilidade:"Corredor 1. Aqui você está caminhando para perto do Tracer.",
+        ts:180,
+        tf:196,
+        type:'interaction',
+        decisoes:[null, "corredor2-trans2", "mapa"],
+        action: [`abrirModal("geracaodecurva")`, null, null],
+        labels:["Abrir moda: Geração de curva.", "Explorar mais", "Ir para: mapa"],
+
+    },
+    {
+        id:"corredor2-trans2",
+        ts:196.45,
+        type:'simple-scene',
+        nextScene: "corredor2-steps3"
+    },
+    {
+        id:"corredor2-steps3",
+        acessibilidade:"Corredor 1. Aqui você está caminhando para perto do Tracer.",
+        ts:205,
+        tf:224,
+        type:'interaction',
+        decisoes:[null, null, "mapa"],
+        action: [`abrirModal("gravacaoco2")`, `abrirModal("polimento")`, null],
+        labels:["Abrir modal: Gravação CO2.", "Abrir modal: Polimento", "Ir para: mapa"],
+
+    },
+    {
+        id:"corredor3",
+        ts:226.20,
+        type:'simple-scene',
+        nextScene: "corredor3-steps1"
+    },
+    {
+        id:"corredor3-steps1",
+        acessibilidade:"Corredor 1. Aqui você está caminhando para perto do Tracer.",
+        ts:228,
+        tf:246,
+        type:'interaction',
+        decisoes:["corredor3-trans2", "mapa"],
+        action: [null, null],
+        labels:["Exlorar mais", "Ir para: mapa"],
+
+    },
+    {
+        id:"corredor3-trans2",
+        ts:248,
+        type:'simple-scene',
+        nextScene: "corredor3-steps2"
+    },
+    {
+        id:"corredor3-steps2",
+        acessibilidade:"Corredor 1. Aqui você está caminhando para perto do Tracer.",
+        ts:263.23,
+        tf:279,
+        type:'interaction',
+        decisoes:["corredor3-trans3", "mapa"],
+        action: [null, null],
+        labels:["Estamos quase chegando.", "Ir para: mapa"],
+
+    },
+    {
+        id:"corredor3-trans3",
+        ts:280,
+        type:'simple-scene',
+        nextScene: "corredor3-steps3"
+    },
+    {
+        id:"corredor3-steps3",
+        acessibilidade:"Corredor 1. Aqui você está caminhando para perto do Tracer.",
+        ts:290,
+        tf:311,
+        type:'interaction',
+        decisoes:[null, "mapa"],
+        action: [`abrirModal("desblocagem")`, null],
+        labels:["Estamos quase chegando.", "Ir para: mapa"],
+
+    },
+   
 
 ]
 
+var abrirModal = function (i){
+    console.log("chamou a modal: #" + i)
+    $("#" + i).modal("show")
+}
+
 // qual a primeira cena com o primeiro evento interativo do video:
-var eventoInicial = "escolha1";
+var eventoInicial = "take1";
 //Id do video no youtube que será usado nas interaçoes
-var videoYID = 'SrsNV8giCVw';
+var videoYID = '1UnNPLMA7dQ';
 
 
 

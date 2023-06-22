@@ -6,9 +6,11 @@ html, body{
     background-color: whitesmoke;
     font-family: sans-serif;
     font-family: RobotoRegular, sans-serif;
-    background-size: contain;
+    background-size: 100% auto;
     background-attachment: fixed;
-    background-position: center
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-image: url(../assets/bg.jpg);
    
 }
 *{
@@ -17,7 +19,12 @@ html, body{
 h1,h2{
     text-align: center;
 }
-
+.modal-header {
+    background-color: #2BCAD2;
+  }
+  .modal-body p img {
+    max-width: 400px;
+  }
 h1{
     font-size: 80px;
     color:#313131;   

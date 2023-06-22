@@ -31,10 +31,10 @@
     </section>
 
     <section id="main">            
-        <h1>TEMPLATE - Vídeo interativo</h1>
-        <h2>Assista ao vídeo e conheça diferentes desfechos para a história selecionando uma das opções nos momentos de interação.</h2>
+        <h1><img src="assets/logo.png" class="img-fluid" alt=""></h1>
+        <h2>Explore o laboratório e conheça as diversas máquinas que compõe a linha de produção de lentes de um laboratório óptico de última geração.</h2>
         <div id="containerVideo">    
-            <h2 id="fsTitle" class="titulo-player">TITULO DO VÍDEO DENTRO DO PLAYER</h2>                 
+            <!-- <h2 id="fsTitle" class="titulo-player">TITULO DO VÍDEO DENTRO DO PLAYER</h2>                  -->
             <!-- impede o click na tela -->
             <div id="barreira" class="window">               
                 <!-- botoes de zoom -->              
@@ -51,20 +51,19 @@
                 o player soh inicializa se tivermos uma interação do usuario
             -->
             <div id="startWindow" class="window">
-                    <button id="btStart" title="botão iniciar">
-                            <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.97 174.97"><title>Iniciar</title><g id="Camada_2" data-name="Camada 2"><g id="tela1"><path class="cls-1" d="M87.48,0A87.49,87.49,0,1,0,175,87.48,87.48,87.48,0,0,0,87.48,0Zm41.79,92.63L67.62,128.22c-4.9,2.83-8.91.51-8.91-5.15V51.89c0-5.66,4-8,8.91-5.14l61.65,35.59C134.17,85.17,134.17,89.8,129.27,92.63Z"/></g></g></svg>-->
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 189 189"><defs><style>.cls-1{isolation:isolate;}.cls-2{opacity:0.8;}.cls-3{opacity:0.31;mix-blend-mode:multiply;}.cls-4{fill:#fff;}</style></defs><title></title><g class="cls-1"><g id="Camada_2" data-name="Camada 2"><g id="tela1"><g class="cls-2"><image class="cls-3" width="189" height="189" xlink:href="data:image/png;base64,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"/><path class="cls-4" d="M89.48,13.7A76.12,76.12,0,1,0,165.6,89.82,76.12,76.12,0,0,0,89.48,13.7Zm36.36,80.6-53.64,31c-4.26,2.46-7.75.45-7.75-4.48V58.85c0-4.92,3.49-6.94,7.75-4.47l53.64,31C130.1,87.81,130.1,91.83,125.84,94.3Z"/></g></g></g></g></svg>
+                    <button id="btStart" title="botão iniciar" style="opacity: 0; color: rgba(0,0,0,0); width: 100%; height: 100%;">
+                        Iniciar tour
                     </button>
             </div>
             <!--<div id="barra"></div>-->
             <div id="CustomPlayer" aria-hidden="true"></div>          
             <span id="fundoBTS"> 
-                <button id="btFull" title="botão tela cheia">
-                    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.96 35.96"><defs><style>.cls-2{fill:none;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>Tela cheia</title><g id="Camada_2" data-name="Camada 2"><g id="tela2"><g class="cls-1"><polyline class="cls-2" points="10.25 1 1 1 1 10.25"/><polyline class="cls-2" points="34.97 10.25 34.97 1 25.72 1"/><polyline class="cls-2" points="1 25.72 1 34.97 10.25 34.97"/><polyline class="cls-2" points="25.72 34.97 34.97 34.97 34.97 25.72"/></g></g></g></svg>-->
+                <button id="btFull" title="botão tela cheia" style="opacity: 0; touch-action: none; pointer-events: none;">
+                  
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 49 49"><defs><style>.cls-1{isolation:isolate;}.cls-2{opacity:0.8;}.cls-3{opacity:0.7;mix-blend-mode:multiply;}.cls-4{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title></title><g class="cls-1"><g id="Camada_2" data-name="Camada 2"><g id="tela2"><g class="cls-2"><image class="cls-3" width="49" height="49" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsSAAALEgHS3X78AAAEWElEQVRoQ+2ZW3PbRgyFv5Ulx4mcad0+9///ubaeNnYU68LtA3C04IqkSIWciTvBzI4oXgAcYBcgz6acM+9d1n0XUkpJh333uGSAfEM0JtiAATupPueKNVY+9D9K9tH4yJiNq2Am2IARdlogXPkKuMOytPHfO9pGotIjsPffE1eABACyce+/EYxEAE6Y/gPFTiM79XSS8nvgI7AFHjAwq3Bfgyk6AN+AV//Fzw9lQzY2mO5o4462HTBb0c4OC5oAFhAhQmsMwC/A78AjBkrKawBfKJk5AU1KKXXO3WJj5To/YXY+0w5WzEiDOf0C/BXOnWSnzoSysMUA/AE8YcoTbQBvWGQ2/n/v48SwxGxvgd8wG1vgg19TRlZYgA7Asz8fp1UD7ekUM/GAZeDJR6LM/YZx1eRWiX5ovSirz8A/fk73XWRCqd64AmVgh0X9xY/fMECaTq+ULFyrTlqoe+y5v7HIxnWxwab0I5ahj7R9ahWAPhBxHDFjzz5eMAcOlHXxlZKl3uqUc84pJa2fvT+XsKAIQJxqB380rpWLKtbb7FwUsRcMwJ9Y5N8oc/KixHZqKqJMxOOvFOcE4rPfs8EKQO9aGwKhiB0o0+kL8C8GQg5PanaeDfBKhoGPzW6FLXCwabTDfDiX1FrGgIAS7T0G4C1cy8Ck1w6/N3vJrQuFSrnsKcMwAUSs+Uc/J0WKXpNzFoibJQA/O+dZkn35ID9kvwWmBlG3+b2fj/N9dMS/Qyb50QVCzWyHLWgo83LMwp1DJvkRQQjdESubL1hlwI+/+bWlszHZjzoTsQllShpfKb3g2mvFHDLJjzOI0IgUATUkaFeKq2X0e+QWP/rWBJRo6FgVYzEAQSb5ce3LTvVb82/RLESZ4scFiPOF8v0LMKmZzSlj/OgF8Z6k/hR8l/ITxI8i/wsQYxhA4J1Vpyn1eUmZ4kcXA5golMmdX2p1yqWBTPWjjwEUs3Dv5/XOAlXLX0gm+dHHAD5gH+dbv6y3x8wAwzeH3OLHEAP4K0acgTEdifYn6pIyyY8xDCC0+SXdt0gmuMGPoTUhBg6MqhG51Sp5C8kkP7pARAXif0QfnsneUL4z3NZHQg+IgVE1igtbfkQAvSDwi2Lj1hQa/kMYUKpDgy2y0X2k6gGRltT/aEvVqanuPcsQeaaIrCkbLqIWe2nMlNJgVqoeEJnvLhozksliCi/kGhcrhY8UcveBS0J5zp2iWJmeKJs8vTq7vrGbaqwpdXqDRaim9vXciYE+ErKgKdq1U9RF7a8xzin6ddbfB0I7PyJyldJP4bwyMPdO0Zr2ol5jPkSfekHo5SqSVtpiittdum8piX7Inra7JpNn2uR75vrG45w7RXUFEu+kjcdoC+gnz3Z++ojtkUm5pAYy505RXYE0veMW8CjyTA7tKXM0NphYAObeKYo9QFPmhOnXrukk8qxuRFFkIFaLOZpdLVftjCHPuhRHycCcrx190mvnJ3n2o8h/lvXmakDXVPYAAAAASUVORK5CYII="/><polyline class="cls-4" points="15.78 7.49 6.53 7.49 6.53 16.73"/><polyline class="cls-4" points="40.5 16.73 40.5 7.49 31.25 7.49"/><polyline class="cls-4" points="6.53 32.2 6.53 41.45 15.78 41.45"/><polyline class="cls-4" points="31.25 41.45 40.5 41.45 40.5 32.2"/></g></g></g></g></svg>
                 </button>
-                <button id="btWindowed" title="botão sair da tela cheia">
-                        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.43 58.43"><defs><style>cls-2{fill:none;stroke-miterlimit:10;stroke-width:3px;}</style></defs><title>Sair da tela cheia</title><g id="Camada_2" data-name="Camada 2"><g id="tela3"><g class="cls-1"><polyline class="cls-2" points="0 18.64 18.64 18.64 18.64 0"/><polyline class="cls-2" points="39.8 0 39.8 18.64 58.43 18.64"/><polyline class="cls-2" points="18.64 58.43 18.64 39.8 0 39.8"/><polyline class="cls-2" points="58.43 39.8 39.8 39.8 39.8 58.43"/></g></g></g></svg>-->
+                <button id="btWindowed" title="botão sair da tela cheia" style="opacity: 0; touch-action: none; pointer-events: none;">
+                        
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 72 71"><defs><style>.cls-1{isolation:isolate;}.cls-2{opacity:0.8;}.cls-3{opacity:0.7;mix-blend-mode:multiply;}.cls-4{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:3px;}</style></defs><title></title><g class="cls-1"><g id="Camada_2" data-name="Camada 2"><g id="tela3"><g class="cls-2"><image class="cls-3" width="72" height="71" xlink:href="data:image/png;base64,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"/><polyline class="cls-4" points="5.83 24.86 24.46 24.86 24.46 6.23"/><polyline class="cls-4" points="45.63 6.23 45.63 24.86 64.26 24.86"/><polyline class="cls-4" points="24.46 64.66 24.46 46.03 5.83 46.03"/><polyline class="cls-4" points="64.26 46.03 45.63 46.03 45.63 64.66"/></g></g></g></g></svg>
                 </button> 
                 <button id="btPause" title="botão pausa">
@@ -80,8 +79,8 @@
         </div>
         <div id="videoInfo">
             <div id="informacoes">
-                <p id="nomeVideo">NOME DO VÍDEO</p>
-                <p id="nomeCurso">NOME DO CURSO</p>
+                <p id="nomeVideo">Técnico em Óptica</p>
+                <!-- <p id="nomeCurso">NOME DO CURSO</p> -->
             </div>
             <div id="logos">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260.43 58.89"><defs><style>.senac-1{fill:#b28700;}.senac-2{fill:#004a8d;}.senac-3{fill:#f7941e;}.senac-4{fill:#fdc280;}</style></defs><title></title><g id="Camada_2" data-name="Camada 2"><g id="tela1"><path class="senac-1" d="M140.44,37.45V37.4c0-3-2.34-4.87-5.94-4.87h-5.57V47h2.85V42.43h1.3c1.66,0,2.8.62,3.19,1.77h0L137.4,47h3l-1.2-3.13h0l-.14-.39a3.49,3.49,0,0,0-.9-1.44l-.38-.35.45-.27A4.41,4.41,0,0,0,140.44,37.45Zm-2.9.06a3.16,3.16,0,0,1-3.28,3.1h-2.48V34.37h2.41a3.12,3.12,0,0,1,3.35,3.1Z"/><polygon class="senac-1" points="166.29 20.62 166.29 20.62 166.29 58.89 166.29 58.89 166.75 58.89 166.75 20.62 166.29 20.62"/><path class="senac-1" d="M148.18,38.54c-2.81-.65-3.57-1-3.57-2.29v0c0-.75.65-1.62,2.48-1.62a8,8,0,0,1,2.48.5V32.55l-.21,0a11.42,11.42,0,0,0-2.23-.31c-3.36,0-5.63,1.73-5.63,4.31v0c0,2.67,1.74,3.54,5.39,4.38,2.49.57,3.32,1,3.32,2.23v0c0,1.07-1.05,1.73-2.74,1.73a7.45,7.45,0,0,1-4.7-1.75l-1.81,2a10.29,10.29,0,0,0,6.44,2.18c3.65,0,5.93-1.7,5.93-4.44v0c0-2.25-1.4-3.41-5.15-4.29"/><path class="senac-1" d="M51,8.27H28.74c-4.88,0-9.86,2.63-12.16,4.27C5.46,20.49,0,36.55,0,36.55,1.54,33.87,12.88,13.1,28.26,13.1H44.51a8.34,8.34,0,0,1-1.37,4.55C52,14.61,51,8.27,51,8.27"/><path class="senac-1" d="M31.53,19.24a8.32,8.32,0,0,1-.86,3.4h0c7.25-.64,10.76-2.82,12.42-5a35.93,35.93,0,0,1-11.55,1.57"/><path class="senac-2" d="M26.28,22.85l-4.48-.08C10.13,22.5,4.61,31,1.91,35.12c2.7-2.82,8-8.06,17.53-7.88,7.41.14,10.15-2.26,11.25-4.6a39.89,39.89,0,0,1-4.41.21"/><path class="senac-2" d="M33.22,44.54a6.26,6.26,0,0,1-2.33.33A2.85,2.85,0,0,1,28.1,42.7h8.23c0-.28,0-.45,0-.74v0c0-3-1.66-5.74-5.65-5.74a5.54,5.54,0,0,0-5.8,5.54c0,3.21,2.32,5.47,5.77,5.47a9.49,9.49,0,0,0,2.53-.32Zm-2.46-5.92a2.47,2.47,0,0,1,2.59,2.22H28.1a2.59,2.59,0,0,1,2.66-2.22"/><path class="senac-2" d="M76.6,41.3c0-2.88-1.75-5.14-5.47-5.14s-5.48,2.26-5.48,5.14V47h3.44V41.09c.06-1.06.48-2.33,2-2.33s2,1.27,2.06,2.33V47H76.6Z"/><path class="senac-2" d="M69.06,41.3c0-2.88-1.76-5.14-5.48-5.14S58.1,38.42,58.1,41.3V47h3.45V41.09c.06-1.06.48-2.33,2-2.33s2,1.27,2.07,2.33V47h3.41Z"/><polygon class="senac-2" points="17.61 35.4 17.61 38.2 23.84 38.2 23.84 41.09 17.61 41.09 17.61 46.95 14.17 46.95 14.17 32.51 25.34 32.51 25.34 35.4 17.61 35.4"/><rect class="senac-2" x="105.85" y="36.4" width="3.43" height="10.55"/><rect class="senac-2" x="105.85" y="32.5" width="3.43" height="2.34"/><path class="senac-2" d="M45.13,44.82a4.81,4.81,0,0,1-.77.06c-2.14,0-3.88-1.44-3.88-3.21s1.74-3.21,3.88-3.21a4.81,4.81,0,0,1,.77.06V36.28a9.89,9.89,0,0,0-1.49-.1c-3.69,0-6.48,2.36-6.48,5.52a5.32,5.32,0,0,0,3,4.74,7.51,7.51,0,0,0,3.36.78,8.71,8.71,0,0,0,1.59-.12Z"/><path class="senac-2" d="M51.3,36.13a5.53,5.53,0,1,0,5.81,5.52,5.67,5.67,0,0,0-5.81-5.52m0,8.6c-2,0-2.48-1.38-2.48-3.08s.44-3.07,2.48-3.07,2.49,1.37,2.49,3.07-.43,3.08-2.49,3.08"/><path class="senac-2" d="M104.33,44.82a4.77,4.77,0,0,1-.76.06c-2.14,0-3.88-1.44-3.88-3.21s1.74-3.21,3.88-3.21a4.77,4.77,0,0,1,.76.06V36.28a9.84,9.84,0,0,0-1.48-.1c-3.7,0-6.49,2.36-6.49,5.52a5.32,5.32,0,0,0,3,4.74,7.51,7.51,0,0,0,3.36.78,8.71,8.71,0,0,0,1.59-.12Z"/><path class="senac-2" d="M116,36.13a5.53,5.53,0,1,0,5.81,5.52A5.67,5.67,0,0,0,116,36.13m0,8.6c-2,0-2.49-1.38-2.49-3.08s.44-3.07,2.49-3.07,2.48,1.37,2.48,3.07S118,44.73,116,44.73"/><path class="senac-2" d="M96.48,36.08s-.51,0-.91,0c-3.56,0-5.75,2-5.75,4.56V47H93.3V40.8c0-1.32.44-1.69,1.19-2a5.43,5.43,0,0,1,2-.37Z"/><path class="senac-2" d="M85.72,44.54a6.31,6.31,0,0,1-2.34.33A2.85,2.85,0,0,1,80.6,42.7h8.22c0-.28,0-.45,0-.74v-.05c0-3-1.65-5.73-5.64-5.73a5.54,5.54,0,0,0-5.8,5.54c0,3.21,2.32,5.47,5.77,5.47a10,10,0,0,0,2.53-.32Zm-2.46-5.93a2.48,2.48,0,0,1,2.59,2.23H80.6a2.58,2.58,0,0,1,2.66-2.23"/><polygon class="senac-2" points="81.7 34.88 84.12 31.25 86.94 32.42 84.19 34.88 81.7 34.88"/><path class="senac-2" d="M234.5.84c-1.34-.32-2.69-.62-4.09-.82l-.16,0a40.73,40.73,0,0,0-5.46,4.82,50.73,50.73,0,0,1,5.58-.51A49.26,49.26,0,0,1,249,7.23,44.07,44.07,0,0,0,234.5.84"/><path class="senac-3" d="M231.55,15.44a48.47,48.47,0,0,1,22.78-4.71,48.63,48.63,0,0,0-21.46-4,49.9,49.9,0,0,0-11,1.62,34.94,34.94,0,0,0-4.27,7.5,47.94,47.94,0,0,0,5.5,4.66,50.23,50.23,0,0,1,8.45-5"/><path class="senac-4" d="M221.87,8.33a48.07,48.07,0,0,0-8.29,3,47.82,47.82,0,0,0,9.51,9.14h0a47.94,47.94,0,0,1-5.5-4.66,34.94,34.94,0,0,1,4.27-7.5"/><path class="senac-4" d="M223.1,20.49a47.94,47.94,0,0,1-5.5-4.66,31.54,31.54,0,0,0-2.43,12,47.4,47.4,0,0,1,7.93-7.39"/><path class="senac-2" d="M260.43,43.36h-.28c-3.81,0-6.56-2.43-6.56-5.79v-.08c0-3.21,2.76-5.73,6.29-5.73l.55,0V27.92h-.5c-6.92,0-12.14,4.15-12.14,9.66v.07c0,5.37,5.29,9.58,12,9.58h.59Z"/><path class="senac-2" d="M190.47,35.27c-4.08-.87-4.65-1.29-4.65-2.58v-.06c0-1,1.05-1.71,3-1.71a10.53,10.53,0,0,1,3.26.62V27.43a21,21,0,0,0-3.2-.32c-4.82,0-8.26,2.35-8.26,5.92v0c0,3.91,3.06,5,7.82,6,4,.84,4.32,1.4,4.32,2.49v.06c0,1.15-1.28,1.85-3.41,1.85a10.82,10.82,0,0,1-6.61-2.38l-3.07,3.06a15.62,15.62,0,0,0,9.58,3.14c5.1,0,8.68-2.19,8.68-6.09v-.06c0-3.42-2.7-4.85-7.5-5.89"/><path class="senac-2" d="M202.38,37a3.88,3.88,0,0,1,3.94-3.43A3.72,3.72,0,0,1,210.16,37Zm3.94-7.09c-5.3,0-9,3.79-9,8.38v.06c0,4.93,4,8.32,9.51,8.32l.82,0V43l-.75,0c-2.31,0-3.94-1.07-4.45-3.15H215c0-.42.06-.69.06-1.14v-.06c0-4.57-2.67-8.74-8.75-8.74"/><path class="senac-2" d="M231.46,37.86c0-4.36-2.67-7.76-8.3-7.76s-8.31,3.4-8.31,7.76v8.52h5.22V37.54c.1-1.61.73-3.51,3.09-3.51s3,1.9,3.12,3.51v8.84h5.18Z"/><path class="senac-2" d="M239.94,30h-1.23v3.9a8.08,8.08,0,0,1,3,.5,2.51,2.51,0,0,1,1.39,2.36c-1.23-.15-2.62-.25-3.83-.28-4.93-.12-7.36,1.51-7.86,4.12a.78.78,0,0,1,0,.14.43.43,0,0,1,0,.05,5.06,5.06,0,0,0-.06.79v.06c0,3.19,2.82,4.93,6.25,4.93a7.44,7.44,0,0,0,5.5-2V46.4h5V37c0-4.36-2.49-6.94-8.12-6.94m3.17,10.64c-.45,2.36-2.88,2.71-3.43,2.74-3.93.21-4.07-2.48-2.74-3.3,1.77-1.1,6.19-.48,6.19-.48a6.35,6.35,0,0,1,0,1"/></g></g></svg>
@@ -93,24 +92,189 @@
     
     <!-- Modal Body -->
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+    <div class="modal fade" id="introducao" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <h5 class="modal-title" id="modalTitleId">Introdução</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Body
+                    <p>Bem-vindo ao nosso Laboratório óptico virtual! Neste emocionante objeto de aprendizagem, você terá a oportunidade de explorar um ambiente realista e interativo sem sair de casa. Prepare-se para embarcar em um tour virtual único, no qual você encontrará um espaço repleto de equipamentos sofisticados, usados pelas maiores empresas do segmento óptico. Nesta experiência imersiva, você terá a chance de interagir dentro do espaço, compreender cada equipamento, em qual parte do processo ele é utilizado e a sua importância. </p>
+                    <p>Estamos animados para iniciar essa jornada com você! Prepare-se para uma experiência única e enriquecedora, na qual a ciência e a tecnologia encontram-se para desvendar os mistérios da luz e da visão. Vamos começar o nosso tour virtual pelo fascinante mundo da óptica! </p>
+                    <strong><p>Clique ou toque nos botões que aparecem no vídeo para explorar o laboratório e ler o conteúdo.</p></strong>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
                 </div>
             </div>
         </div>
     </div>
     
+    <div class="modal fade" id="recebimentoPedidos" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Entrada de serviços no laboratório</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Impulsionada pela rápida evolução tecnológica e pela crescente demanda por soluções personalizadas e eficientes no campo da óptica, a digitalização dos pedidos tem se tornado cada vez mais popular. Dessa forma, quando o estabelecimento óptico comercializa um produto, ele faz o pedido virtualmente para o laboratório. Esse pedido é recebido pelo laboratório cujo software faz a análise a fim de evitar possíveis erros e confirmar a possibilidade de produção. </p>
+                    <p>Também ocorre nesta etapa a impressão da ordem de serviço e a separação das matérias-primas e dos insumos necessários, tais como os blocos e porta-blocos reutilizáveis. Em seguida, o serviço é encaminhado para a próxima etapa. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="tracer" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Chegada da armação no laboratório</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                        <img src="assets/tracer.jpg" class="d-inline-block" alt="">
+                    </p>
+                    <p>Em laboratórios modernos, todo o percurso de produção das lentes oftálmicas, bem como o processo de montagem dessas lentes, é realizado de forma digitalizada. Sendo assim, ao chegar no laboratório, a armação escolhida pelo cliente passa pelo processo de leitura de modelo realizada neste equipamento, o <i>tracer</i>. </p>
+                    <p>O <i>tracer</i> é um dispositivo projetado para digitalizar e capturar as dimensões e características específicas de uma armação de óculos, fornecendo informações precisas que são essenciais para o processo de produção das lentes. Ao posicionar a armação no <i>tracer</i>, o equipamento utiliza sensores ópticos e tecnologia de digitalização para obter uma representação tridimensional precisa da armação. </p>
+                    <p>Sem a leitura adequada da armação no <i>tracer</i>, o processo de produção das lentes seria altamente impreciso e poderia resultar em lentes mal-ajustadas. Além disso, a falta de precisão na leitura da armação também pode levar a erros na montagem das lentes na armação, comprometendo a estética e a funcionalidade do par de óculos. </p>
+                    <p>Em resumo, a leitura da armação no equipamento <i>tracer</i> desempenha um papel fundamental na produção de lentes ópticas de alta qualidade. A precisão e a fidelidade das informações capturadas pelo <i>tracer</i> garantem que as lentes sejam personalizadas de acordo com as especificações da armação, proporcionando conforto visual, correção adequada e uma experiência satisfatória para o usuário final. É um passo crucial no processo de fabricação de óculos que contribui para a qualidade e eficácia dos dispositivos ópticos. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="blocagem" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Blocagem das lentes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                        <img src="assets/blocagem.jpg" class="d-inline-block" alt="">
+                    </p>
+                    <p>A máquina de blocagem, ou blocadora, é um equipamento projetado especificamente para garantir a fixação dos blocos nos porta-blocos reutilizáveis. Esses porta-blocos encaixam-se nos suportes das demais máquinas utilizadas no processo de surfaçagem das lentes, tais como o gerador de curvas e polimento. </p>
+                    <p>O processo de blocagem em equipamentos modernos dispensa a proteção das lentes por meio da colagem do <i>tape blue</i> na superfície externa do bloco, visto que a fixação é feita com um adesivo biodegradável e não mais com o <i>alloy</i> (metal líquido que se solidifica em temperatura ambiente). </p>
+                    <p>Ainda é comum encontrarmos blocagens utilizando o <i>alloy</i> e a diferença entre as duas formas de blocagem vai além do impacto ambiental que resulta do uso de tal metal líquido. Ao término do processo de surfaçagem, as lentes precisam ser removidas do porta-blocos. Com o adesivo biodegradável, esse processo de remoção será feito com o uso de jato de água canalizado, a fim de proporcionar a descolagem sutil entre as lentes e o porta-blocos. Já com o uso de <i>alloy</i>, por se tratar de um metal, esse processo requer o uso de impacto para a descolagem entre as lentes e o porta-blocos, o que favorece danos às lentes e, por esse motivo, é preciso ser realizado por profissionais com experiência, para minimizar tais intercorrências. </p>
+                    <p>A blocagem bem realizada é de extrema importância na fabricação de lentes oftálmicas. Ela assegura a posição correta da lente, garante a precisão do processo de surfaçagem e facilita o trabalho dos técnicos. Ao priorizar uma blocagem precisa e cuidadosa, combinada com os mesmos atributos nos demais processos, os laboratórios ópticos podem oferecer lentes de alta qualidade, confortáveis e adequadas às necessidades visuais de cada indivíduo. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="geracaodecurva" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Usinagem das lentes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                        <img src="assets/geracaocurva.jpg" class="d-inline-block" alt="">
+                    </p>
+                    <p>A geração de curvas é um processo fundamental na fabricação de lentes oftálmicas. Essas máquinas são projetadas para criar as curvas desejadas nas superfícies internas dos blocos, permitindo a correção de erros refrativos e a obtenção da prescrição correta. </p>
+                    <p>O processo de surfaçagem em uma máquina geradora de curvas ocorre após as seguintes etapas: </p>
+                    <p>1. Preparação da lente: antes de iniciar o processo de surfaçagem, o bloco em bruto é preparado. Isso envolve a fixação da lente em um suporte adequado para garantir estabilidade durante a geração de curvas. O bloco também é limpo e inspecionado para garantir que não haja defeitos visíveis que possam afetar a qualidade final. </p>
+                    <p>2. Programação: a máquina geradora de curvas é programada com os parâmetros necessários para criar as curvas desejadas na lente. Isso inclui informações sobre o tipo de lente, a prescrição óptica, a curva-base, o diâmetro do bloco e outros detalhes relevantes. A programação é realizada por meio de um <i>software</i> específico que controla a máquina. </p>
+                    <p>A máquina, então, inicia o processo de geração de curvas, que envolve a remoção de material da superfície interna do bloco para criar as curvas desejadas. Esse trabalho é feito por meio de ferramentas específicas, como fresas ou ponteiras diamantadas, que são acionadas em alta velocidade para esculpir a superfície interna do bloco. </p>
+                    <p>Assim, conclui-se que o processo de surfaçagem em uma máquina geradora de curvas é altamente preciso e controlado, visando obter lentes com curvas corretas e de alta qualidade óptica. Essas máquinas desempenham um papel crucial na indústria óptica, permitindo a produção eficiente e confiável de lentes oftálmicas personalizadas. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="gravacaoco2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Marcação das lentes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                        <img src="assets/gravacaoco2.jpg" class="d-inline-block" alt="">
+                    </p>
+                    <p>A máquina de marcação de lentes multifocais <i>engraver</i> é uma tecnologia avançada usada na indústria óptica para criar marcações precisas em lentes multifocais. Essas marcações são essenciais para auxiliar o técnico e o consultor óptico a identificarem os parâmetros tecnológicos a que o seu cliente está a adaptado. </p>
+                    <p>Neste exemplar de equipamento, é necessário o uso do <i>laser</i> de CO2, uma fonte de energia que emite um feixe de luz infravermelha. Essa frequência específica é altamente absorvida por materiais orgânicos e demais polímeros utilizados na fabricação das lentes oftálmicas. Ao interagir com o material da lente, o <i>laser</i> de CO2 produz um efeito de ablação, removendo uma camada fina do material e criando a marcação desejada. </p>
+                    <p>A máquina de marcação de lentes multifocais a <i>laser</i> de CO2 contém um sistema de controle preciso, que permite a criação de marcações complexas e personalizadas. As marcações podem incluir a identificação do fabricante, o índice de refração das lentes, a adição do usuário, entre outras informações relevantes. Essas marcações são feitas de modo permanente e não se apagam com o tempo ou com o uso das lentes. </p>
+                    <p>A principal vantagem da máquina de marcação de lentes multifocais a <i>laser</i> de CO2 é a sua precisão. A tecnologia a <i>laser</i> permite a criação de marcações extremamente detalhadas e nítidas, mesmo em lentes de alta dioptria ou com curvas complexas. Além disso, a marcação a <i>laser</i> é um processo rápido e eficiente, o que aumenta a produtividade na fabricação de lentes. </p>
+                    <p>Em resumo, a máquina de marcação de lentes multifocais a <i>laser</i> de CO2 é uma ferramenta avançada e precisa, que desempenha um importante papel. Sua capacidade de criar marcações permanentes, duráveis e altamente precisas garante a qualidade e a legibilidade das informações nas lentes. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="polimento" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Acabamento das lentes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                        <img src="assets/polimento.jpg" class="d-inline-block" alt="">
+                    </p>
+                    <p>Após a geração de curvas e a marcação, a lente passa por etapas adicionais de acabamento, como polimento, para obter uma superfície lisa e de qualidade óptica superior. Essas etapas finais contribuem para o conforto e a clareza visual dos usuários finais. </p>
+                    <p>Durante o processo, os abrasivos são aplicados às lentes por meio de discos rotativos, que removem cuidadosamente as imperfeições e criam uma superfície lisa e brilhante. A pressão aplicada durante o polimento das lentes oftálmicas também é um fator crítico que influencia a qualidade do resultado final. A pressão deve ser controlada com precisão para evitar o excesso de desbaste ou danos às lentes. Geralmente, a pressão é ajustada de acordo com o tipo de lente e material. </p>
+                    <p>Por fim, é essencial manter as lentes e a máquina em uma temperatura adequada. O superaquecimento pode causar deformações nas lentes, comprometendo sua qualidade óptica. As máquinas de polimento devem controlar a temperatura e evitar qualquer problema decorrente do calor gerado durante o processo. </p>
+                    <p>Dar a atenção devida ao polimento ajuda a garantir resultados precisos e acabamento impecável das lentes. A precisão e a uniformidade do processo garantem resultados ópticos superiores, proporcionando aos usuários uma visão clara e nítida. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="desblocagem" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Acabamento das lentes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                        <img src="assets/desblocagem.jpg" class="d-inline-block" alt="">
+                    </p>
+                    <p>A desblocagem é o processo de remoção das lentes já surfaçadas dos porta-blocos. Diferentemente da desblocagem de uma lente fixada por <i>alloy</i>, esta máquina não faz uso de impacto para a remoção das lentes, e sim a combinação de água, calor e pressão devidamente controlados, a fim de remover a lente do porta-blocos com mínimas chances de causar danos a ela. </p>
+                    <p>Algumas máquinas de desblocagem contêm recursos de controle automatizado, que permitem que o processo de desblocagem seja programado e executado de modo preciso e consistente. Esses sistemas automatizados garantem a repetibilidade do processo e minimizam a intervenção manual, reduzindo a possibilidade de erros. </p>
+                    <p>Em conclusão, a desblocagem envolve aquecimento controlado, aplicação de pressão precisa, monitoramento da temperatura, resfriamento adequado e, possivelmente, controle automatizado. Esses detalhes técnicos combinados garantem a remoção eficiente e segura das lentes dos porta-blocos, contribuindo para a produção de lentes e ainda gerando menos impactos ambientais, devido ao adesivo utilizado para a fixação das lentes ser constituído de materiais biodegradáveis. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
     
     <!-- Optional: Place to the bottom of scripts -->
     <script>
@@ -122,5 +286,10 @@
     <script src="js/eventos.js"></script>   
     <script src="js/customPlayer.js"></script>     
     
+    <script language="javascript">
+        $(function(){
+            $("#introducao").modal("show")
+        });
+    </script>
 </body>
 </html>

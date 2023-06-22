@@ -53,11 +53,11 @@ background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#ef349e', GradientType=0 );
 
 }
-#fundoBTS:hover{
+/* #fundoBTS:hover{
     transition: 300ms ease-in;
     background-blend-mode: multiply;
     opacity: 1;
-}
+} */
 #containerVideo{
     /*border: 5px solid black;  */
     /*width: 640px;
@@ -147,7 +147,7 @@ Noe do curso: roboto Light 25pt #313131
     margin-bottom: 3.6%;
     box-shadow: none;
     color: transparent;
-    border: 1px solid magenta;
+    border: 0px none;
     z-index: 999;
 }
 #startWindow{
@@ -157,7 +157,159 @@ Noe do curso: roboto Light 25pt #313131
     background-size: contain;
 }
 
+#btn_take1_0 {
+    display: block;
+    width: 11%;
+    height: 18%;
+    bottom: 22%;
+    position: absolute;
+    left: 56%;
+  }
 
+  #btn_take3_0 {
+    position: absolute;
+    display: block;
+    width: 25%;
+    left: 23%;
+    bottom: 33%;
+    height: 12%;
+  }
+ 
+  
+  #btn_mapa_0 {
+    position: absolute;
+    display: block;
+    bottom: 23%;
+    left: 6%;
+    width: 26%;
+    height: 12%;
+  }
+
+  #btn_mapa_1 {
+    position: absolute;
+    display: block;
+    top: 32%;
+    left: 30%;
+    width: 9%;
+    height: 14%;
+  }
+
+  #btn_mapa_2 {
+    position: absolute;
+    display: block;
+    bottom: 25%;
+    left: 50%;
+    width: 10%;
+    height: 15%;
+  }
+  #btn_mapa_3 {
+    position: absolute;
+    display: block;
+    right: 31%;
+    bottom: 16%;
+    width: 9%;
+    height: 16%;
+  }
+  #btn_corredor1-steps1_0 {
+    position: absolute;
+    display: block;
+    bottom: 21%;
+    left: 42%;
+    width: 12%;
+    height: 19%;
+  }
+  #btn_corredor1-steps2_0 {
+    position: absolute;
+    display: block;
+    top: 38%;
+    left: 27%;
+    width: 25%;
+    height: 12%;
+  }
+  #btn_corredor2-steps1_0 {
+    position: absolute;
+    display: block;
+    top: 25%;
+    left: 9%;
+    width: 25%;
+    height: 11%;
+  }
+  #btn_corredor2-steps1_1 {
+    position: absolute;
+    display: block;
+    bottom: 15%;
+    left: 42%;
+    width: 13%;
+    height: 18%;
+  }
+  #btn_corredor2-steps2_0 {
+    position: absolute;
+    display: block;
+    top: 36%;
+    left: 36%;
+    width: 24%;
+    height: 11%;
+  }
+  #btn_corredor2-steps2_1 {
+    position: absolute;
+    display: block;
+    bottom: 14%;
+    left: 49%;
+    width: 11%;
+    height: 18%;
+  }
+  #btn_corredor2-steps3_0 {
+    position: absolute;
+    display: block;
+    bottom: 18%;
+    left: 34%;
+    width: 25%;
+    height: 11%;
+  }
+  #btn_corredor2-steps3_1 {
+    position: absolute;
+    display: block;
+    top: 38%;
+    left: 45%;
+    width: 25%;
+    height: 11%;
+  }
+  #btn_corredor3-steps1_0 {
+    position: absolute;
+    display: block;
+    top: 36%;
+    left: 23%;
+    width: 12%;
+    height: 18%;
+  }
+  #btn_corredor3-steps2_0 {
+    position: absolute;
+    display: block;
+    bottom: 27%;
+    left: 10%;
+    height: 18%;
+    width: 12%;
+  }
+  #btn_corredor3-steps3_0 {
+    position: absolute;
+    display: block;
+    top: 38%;
+    left: 13%;
+    width: 25%;
+    height: 11%;
+  }
+ /* ir para o mapa*/
+ #btn_take3_1, #btn_corredor1-steps1_1, #btn_corredor1-steps2_1, #btn_corredor2-steps1_2,
+ #btn_corredor2-steps2_2, #btn_corredor2-steps3_2, #btn_corredor3-steps1_1,
+ #btn_corredor3-steps2_1, #btn_corredor3-steps3_1 {
+    position: absolute;
+    top: 12%;
+    right: 9%;
+    width: 25%;
+    height: 12%;
+    display: block;
+  }
+  /* ir para o mapa */
 #btStart{
     border:none;
     padding: 20px;
@@ -235,6 +387,8 @@ Noe do curso: roboto Light 25pt #313131
     background-size: contain;
     background-color: transparent;
     border: none;
+    pointer-events: none;
+    touch-action: none;
 }
 
 
@@ -315,6 +469,9 @@ button{
     }
 }
 
+#fundoBTS {
+    opacity: 0px !important;
+}
 @media screen and (max-width:700px){    
     #fundoBTS{
         opacity:1;
