@@ -471,16 +471,19 @@ button{
 
 #fundoBTS {
     opacity: 0px !important;
+    pointer-events: none !important;
+    touch-action: none !important;
 }
 @media screen and (max-width:700px){    
     #fundoBTS{
-        opacity:1;
+        opacity:0;
         width: 50px;
         position: absolute;
         top: 0;
         right: 0;
         height: 100%;
-        background: none;
+        background: none; 
+        
     }
     
     #btPause, #btPlay{
@@ -514,22 +517,28 @@ button{
     }
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1180px){
     #containerVideo{
-        width: 68vw;	
-        height: calc(68vw * (9/16));
+        width: 100%;	
+        height: calc(95vw * (9/16));
+    }
+}
+@media screen and (max-width:1024px) and (orientation: portrait){
+    #containerVideo{
+        width: 100%;	
+        height: calc(90vw * (9/16));
     }
 }
 
 @media screen and (min-height:800px){
-    body{
+    /* body{
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-flow: row;
         flex-direction: column;
-    }
+    } */
 
 }
 

@@ -6,7 +6,7 @@ html, body{
     background-color: whitesmoke;
     font-family: sans-serif;
     font-family: RobotoRegular, sans-serif;
-    background-size: 100% auto;
+    background-size: cover;
     background-attachment: fixed;
     background-position: left top;
     background-repeat: no-repeat;
